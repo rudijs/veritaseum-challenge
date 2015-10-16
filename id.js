@@ -1,4 +1,6 @@
+// Best practice update #1
 (function () {
+    // Best practice update #2
     'use strict';
 
     /*======================================================================*\
@@ -8,6 +10,8 @@
       hhaW4oKnppcChzWy0yOjotMl0sIHNbOjotMl0pKSk=
     \*======================================================================*/
 
+    // Fix #1
+    //if (NAMESPACE == null || typeof (NAMESPACE) == 'undefined') {
     if (typeof (NAMESPACE) == 'undefined' || NAMESPACE == null) {
 
         var NAMESPACE = {};
@@ -17,6 +21,8 @@
         var resource = function (id) {
             // Private data
             var _all_ids = new Array();
+
+            // Best practice #3
             // var _closed = false;
             var _id = id;
             var _expensive_resource = null;
@@ -70,4 +76,6 @@
         NAMESPACE.resource = resource;
 
     }
+
+// Best practice update #1
 })();

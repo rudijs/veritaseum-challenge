@@ -7,13 +7,13 @@ The suggested fixes are detailed here in this README below, not inline in the co
 ## Essential Code Fixes
 
 1. Add a test for the code: test/id_spec.js (currently does nothing except show any syntax errors or issues like next on this list)
-2. Line 8 typeof check must before null check.
-3. Line 9 NAMESPACE missing var keyword which puts NAMESPACE in the global context.
+2. Line 14 typeof check must before null check.
+3. Line 17 NAMESPACE missing var keyword which puts NAMESPACE in the global context.
 
 ## Best practice Code Fixes
 
 1. Line 1 Add 'use strict' statement
-2. Line 20 Unused _closed variable
+2. Line 25 Unused _closed variable
 
 ## Code Review Comments
 
